@@ -4,9 +4,6 @@ import math
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 
-# ------------------------------
-# Página de inicio con instrucciones
-# ------------------------------
 @app.route("/", methods=["GET"])
 def index():
     html = """
